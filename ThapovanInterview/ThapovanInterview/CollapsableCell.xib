@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollapsableCell" id="KGk-i7-Jjw" customClass="CollapsableCell" customModule="Thapovan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBM-am-aMW" userLabel="body">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qk0-8e-DWs" userLabel="arrow">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qk0-8e-DWs" secondAttribute="height" multiplier="1:1" id="dzW-De-hOi"/>
+                                    <constraint firstAttribute="width" constant="30" id="yiM-iO-Q1j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="►">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <state key="selected" title="▼">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVQ-cs-sA4">
+                                <rect key="frame" x="54" y="4" width="258" height="36"/>
+                                <string key="text">fdsfdsfdsfsdfdsf sdfhjsdjfhds fihds ifhjdsfijhsadf jisdhfisdhfsd ifuhsdifhsd ifadsifadifhdsafishjdf iasdjfadsifasdifhdsoifhdsfoioisdhfsdifhasdifjhawdfiadsh</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="BVQ-cs-sA4" secondAttribute="bottom" constant="4" id="2t2-cx-Smd"/>
+                            <constraint firstItem="BVQ-cs-sA4" firstAttribute="top" secondItem="eBM-am-aMW" secondAttribute="top" constant="4" id="8ND-CP-GYR"/>
+                            <constraint firstAttribute="trailing" secondItem="BVQ-cs-sA4" secondAttribute="trailing" constant="8" id="SC0-bb-N58"/>
+                            <constraint firstItem="qk0-8e-DWs" firstAttribute="centerY" secondItem="eBM-am-aMW" secondAttribute="centerY" id="dMZ-JC-u53"/>
+                            <constraint firstItem="BVQ-cs-sA4" firstAttribute="leading" secondItem="qk0-8e-DWs" secondAttribute="trailing" constant="8" id="iL1-yk-vAb"/>
+                            <constraint firstItem="qk0-8e-DWs" firstAttribute="leading" secondItem="eBM-am-aMW" secondAttribute="leading" constant="16" id="uG5-uA-O1s"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eBM-am-aMW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8jf-3q-6tP"/>
+                    <constraint firstAttribute="trailing" secondItem="eBM-am-aMW" secondAttribute="trailing" id="Hck-Ic-OCf"/>
+                    <constraint firstItem="eBM-am-aMW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fpl-jH-Osr"/>
+                    <constraint firstAttribute="bottom" secondItem="eBM-am-aMW" secondAttribute="bottom" id="sfi-gJ-C2c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="arrow" destination="qk0-8e-DWs" id="MGF-e8-8Pt"/>
+                <outlet property="body" destination="eBM-am-aMW" id="aDr-VL-1TT"/>
+                <outlet property="commentLabel" destination="BVQ-cs-sA4" id="BYX-xU-Ohf"/>
+            </connections>
+            <point key="canvasLocation" x="-206" y="24"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
